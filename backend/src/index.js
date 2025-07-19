@@ -11,7 +11,7 @@ const PORT = process.env.PORT;
 const __dirname = path.resolve();
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://leaderboard-app-frontend-mb1l.onrender.com", credentials: true }));
 app.use(express.json());
 
 app.use("/api", userRoutes);
